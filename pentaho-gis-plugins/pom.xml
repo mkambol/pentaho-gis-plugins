@@ -12,9 +12,21 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xs
 
   <profiles>
     <profile>
-      <id>pentaho-7</id>
+      <id>pentaho-8-ss</id>
       <activation>
         <activeByDefault>true</activeByDefault>
+        <property>
+          <name>pentaho</name>
+          <value>8</value>
+        </property>
+      </activation>
+      <properties>
+        <pentaho.version>8.1.0.0-SNAPSHOT</pentaho.version>
+      </properties>
+    </profile>
+    <profile>
+      <id>pentaho-7</id>
+      <activation>
         <property>
           <name>pentaho</name>
           <value>7</value>
