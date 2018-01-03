@@ -378,7 +378,7 @@ public class GisFileInputDialog extends BaseStepDialog implements StepDialogInte
         paramsColumnInfo = getParamsColumnInfo();
         wParams = new TableView(transMeta, shell, SWT.BORDER | SWT.FULL_SELECTION | SWT.MULTI, paramsColumnInfo, 0, lsMod, props);
         wParams.optWidth(true);
-        wParams.setReadonly(true);
+        wParams.setReadonly(false);
         fdParams = new FormData();
         fdParams.left = new FormAttachment(0, 0);
         fdParams.top = new FormAttachment(wlParams, margin);
